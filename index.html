@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Big Emoji</title>
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <section id="emoji-section">
+        <i id="emoji-wrapper"></i>
+    </section>
+
+    <section class="apl-container">
+        <p id="emoji-name"></p>
+        <p>
+            <input type="text">
+        </p>
+        <p>
+            <input type="range" id="emoji-size" min="1" max="100" value="100">
+        </p>
+        <div class="apl-button-group" id="color-button-group">
+            <button class="apl-button apl-color-button apl-color-button--black"></button>
+            <button class="apl-button apl-color-button apl-color-button--white"></button>
+            <button class="apl-button apl-color-button apl-color-button--red"></button>
+            <button class="apl-button apl-color-button apl-color-button--emoji apl-color-button--active"></button>
+            <button class="apl-button apl-color-button" id="custom-color-button">
+                
+            </button>
+        </div>
+
+        <div class="apl-button-group">
+            <button class="apl-button apl-button--flat apl-button--color-picker">
+                <!-- <img src="/img/buttons/ic_color_lens_black_24px.svg" /> -->
+                <input type="color" id="custom-color">
+            </button>
+            <button class="apl-button apl-button--flat" id="random-color-button"><img src="/img/buttons/ic_shuffle_black_24px.svg" /></button>
+        </div>
+
+    </section>
+
+
+    <script src="//twemoji.maxcdn.com/2/twemoji.min.js?2.3.1"></script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

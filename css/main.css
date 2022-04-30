@@ -1,0 +1,170 @@
+body {
+    /* background-color: #000; */
+    margin: 0;
+    /* overflow: hidden; */
+    padding: 0;
+    font-family: sans-serif;
+
+    padding-bottom: 10rem;
+}
+
+/* input:focus, button:focus {
+    outline-color: #ffcc4d;
+} */
+
+#emoji-section {
+    background: black;
+    position: relative;
+    height: 100vh;
+}
+
+#emoji-wrapper {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    /* max-height: 90%; */
+    max-height: 100%;
+    /* max-width: 90%; */
+    max-width: 100%;
+    /* overflow: auto; */
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.emoji {
+    height: 100%;
+    width: 100%;
+}
+
+
+#emoji-size {
+    width: 100%;
+}
+
+footer {
+    color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding: 2rem;
+    visibility: collapse;
+    font-size: 1.25rem;
+}
+
+.visible {
+    visibility: visible;
+}
+
+
+.apl-container {
+    margin: 0 1rem;
+}
+
+
+.apl-button-group {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+}
+
+.apl-button-group .apl-button {
+    margin: 0 0.5rem 1rem 0;
+}
+
+.apl-color-button {
+    /* outline-color: #ffcc4d; */
+    /* outline: 2px solid #467543; */
+    background-color: gray;
+    border: none;
+    border-radius: 2px;
+    height: 3rem;
+    
+    width: 3rem;
+}
+
+.apl-color-button--black {
+    background-color: black;
+}
+
+.apl-color-button--white {
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.apl-color-button--red {
+    background-color: red;
+}
+
+.apl-color-button--green {
+    background-color: #00ff00;
+}
+
+.apl-color-button--blue {
+    background-color: blue;
+}
+
+.apl-color-button--emoji {
+    background-color: #ffcc4d;
+}
+
+/* .apl-color-button--active::after {
+    content: "";
+    display: block;
+    height: 1rem;
+    background-color: red;
+} */
+
+.apl-color-button--active {
+    /* border: 5px solid #ffcc4d; */
+    /* outline-style: dotted;
+    outline-color: #ffcc4d; */
+    position: relative;
+}
+
+.apl-color-button--active::after {
+    background-color: black;
+    bottom: -0.5rem;
+    content: "";   
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+
+
+.apl-button input[type=color] {
+    border: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    /* background: transparent;
+    appearance: none;
+    border: none; */
+    /* width: 4rem;
+    height: 4rem; */
+}
+
+.apl-button--flat {
+    background: transparent;
+    border: 1px solid #000;
+    border-radius: 2px;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+}
+
+.apl-button--flat:active {
+    background-color: #eee;
+}
+
+.apl-button--color-picker {
+    background-image: url("/img/buttons/ic_color_lens_black_24px.svg");
+    background-size: cover;
+}
